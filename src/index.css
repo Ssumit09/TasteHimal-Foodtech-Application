@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TasteHimal - Premium Himalayan cuisine delivery design system */
+
+@layer base {
+  :root {
+    /* Brand Colors - Himalayan-inspired mountain palette */
+    --background: 0 0% 100%;
+    --foreground: 158 64% 12%;
+    
+    /* Primary - Deep teal/emerald (mountain lakes) */
+    --primary: 158 64% 20%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 158 45% 35%;
+    --primary-glow: 158 55% 45%;
+    
+    /* Secondary - Warm gold (sunset on peaks) */
+    --secondary: 43 74% 95%;
+    --secondary-foreground: 158 64% 20%;
+    
+    /* Accent - Rich gold */
+    --accent: 43 74% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Success - Fresh mountain green */
+    --success: 122 39% 49%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Muted - Mountain mist grays */
+    --muted: 158 15% 96%;
+    --muted-foreground: 158 15% 45%;
+    
+    /* Cards - Pure with subtle elevation */
+    --card: 0 0% 100%;
+    --card-foreground: 158 64% 12%;
+    
+    /* Interactive elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 158 64% 12%;
+    --border: 158 15% 90%;
+    --input: 158 15% 96%;
+    --ring: 158 64% 20%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Design tokens */
+    --radius: 0.875rem;
+    
+    /* Gradients - Mountain-inspired */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-himalayan: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-mountain: linear-gradient(180deg, hsl(var(--primary-light)) 0%, hsl(var(--primary)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    
+    /* Shadows - Elevated mountain feel */
+    --shadow-himalayan: 0 12px 40px -8px hsl(var(--primary) / 0.25);
+    --shadow-card: 0 6px 25px -3px hsl(158 15% 45% / 0.1);
+    --shadow-float: 0 25px 50px -12px hsl(var(--primary) / 0.4);
+    --shadow-glow: 0 0 50px hsl(var(--accent) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
