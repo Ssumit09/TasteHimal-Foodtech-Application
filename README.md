@@ -10,18 +10,25 @@ TasteHimal  a FoodTech web application using AWS, Jenkins, Terraform, SonarQube,
 ---
 
 ## 📁 Folder Structure
-├── dist/ # Production build output
-├── public/ # Static assets and favicon
-├── src/ # All React components and logic
-├── Dockerfile # For containerizing the frontend
-├── jenkinsfile # Jenkins pipeline for CI/CD
-├── install.sh # Shell script for setup
-├── tailwind.config.ts # Tailwind CSS configuration
-├── tsconfig*.json # TypeScript configurations
-├── components.json # Component registry (optional UI libs)
-└── index.html # Entry HTML file
-
-
+```plaintext
+├── dist/                   # Production build output
+├── public/                 # Static assets like images, favicon
+├── src/                    # All React components and frontend logic
+├── .gitignore              # Git ignored files
+├── Dockerfile              # Docker configuration to containerize the app
+├── README.md               # Project documentation
+├── bun.lockb               # Lock file for Bun package manager
+├── components.json         # Optional component metadata
+├── index.html              # Root HTML file
+├── install.sh              # Setup shell script
+├── jenkinsfile             # Jenkins pipeline definition
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Dependency lock file
+├── postcss.config.js       # PostCSS configuration
+├── tailwind.config.ts      # Tailwind CSS configuration
+├── tsconfig.app.json       # TypeScript config for app compilation
+└── tsconfig.json           # Base TypeScript configuration
+```
 ---
 
 ## 💻 Tech Stack
